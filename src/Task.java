@@ -14,7 +14,7 @@ public class Task {
     }
 
     public String getTaskName() {
-        return taskName;
+        return taskId + " " + taskStatus + " " + taskName + " - " + taskDescription;
     }
 
     public String getTaskDescription() {
@@ -27,6 +27,10 @@ public class Task {
 
     public TaskStatus getTaskStatus() {
         return taskStatus;
+    }
+
+    public void setTaskStatus(TaskStatus taskStatus) {
+        this.taskStatus = taskStatus;
     }
 }
 
